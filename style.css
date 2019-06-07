@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:'header header'
+                        'icones icones'  
+                        'input input'
+                        'sociais sociais'
+                        'footer footer';
+    grid-template-rows: 450px 30vh 40vh 50vh 20vh;                   
+}
+
+header{grid-area: header;
+    background-color: rgb(0, 255, 106);
+    background-repeat: no-repeat;
+    background-image: url(imagens/banner.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+    padding-top: 10px 0px 0px 0px;
+    border-top: 10px solid rgb(0, 255, 106);
+
+}
+
+.texto{
+    display: block;
+    /* align-items: center;
+    justify-items: center; */
+    height: 200px;
+    width: 450px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.mao{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    height: 500px;
+    width: 200px;
+    }
+
+
+.texto h1{
+    
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 36pt;
+    font-weight: 200;
+}
+
+
+.texto h1 span{
+    color: green;
+    
+
+}
+
+.texto img{
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 100px;
+    border: 10px solid rgba(0, 0, 0, 0.466)
+}
+
+.texto h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+
+
+}
+
+.texto img:hover{
+    background-color: rgb(0, 255, 106);
+    border-radius: 100px;
+    border: 10px solid rgb(0, 255, 106);
+}
+
+nav{ grid-area: icones;
+    background-color: blueviolet;
+
+
+}
+
+aside{grid-area: input;
+    background-color: brown;
+
+
+}
+
+section{grid-area: sociais;
+    background-color: aqua;
+
+
+
+}
+
+footer{grid-area: footer;
+    background-color: yellow;
+
+
+}
