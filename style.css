@@ -1,15 +1,16 @@
 body{
     margin: 0;
     display: grid;
-    grid-template-areas:'header header'
-                        'icones icones'  
-                        'input input'
-                        'sociais sociais'
-                        'footer footer';
-    grid-template-rows: 450px 30vh 40vh 50vh 20vh;                   
+    grid-template-areas:'header header header'
+                        'nav nav nav'  
+                        'aside section section'
+                        'div div div'
+                        'footer footer footer';
+    grid-template-rows: 450px 40vh 35vh 40vh 20vh ;    
+    grid-template-columns: 30vw 20vw 10vw ;               
 }
-
-header{grid-area: header;
+/* ======================================================================================= */
+header {grid-area: header;
     background-color: rgb(0, 255, 106);
     background-repeat: no-repeat;
     background-image: url(imagens/banner.png);
@@ -66,8 +67,6 @@ header{grid-area: header;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 100;
-
-
 }
 
 .texto img:hover{
@@ -75,28 +74,173 @@ header{grid-area: header;
     border-radius: 100px;
     border: 10px solid rgb(0, 255, 106);
 }
+/* ================================================================================================= */
+nav{ grid-area: nav;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    
+}
 
-nav{ grid-area: icones;
-    background-color: blueviolet;
+.desenhos{
+    background-color:green;
+    border-radius: 100px;
+    border: 10px solid green;
+        
+}
 
+.h1{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    font-weight: 100;
+    text-align: center;
+    font-size: 13pt;
+}
+
+
+
+
+/* ============================================================================== */
+aside{grid-area: aside;
+    background-color: rgba(128, 128, 128, 0.185);
+    display: block;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+      
+}
+
+.texto1 h1{
+    align-items: center;
+    font-family:  'Roboto', sans-serif;
+    font-weight: 100;
 
 }
 
-aside{grid-area: input;
-    background-color: brown;
+.texto1 h2{
+    color:gray;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    text-align: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    font-weight: 100;
+    text-align: center;
+    font-size: 13pt;
+}
 
+
+.input{
+    border-radius: 05px;
+    font: size 15;px;
+    width: 30%;
+    color: gray;
+}
+
+.Notify{
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    border-radius: 05px;
+    width: 20%;
+}
+
+
+section{grid-area: section;
+    background-color: rgba(128, 128, 128, 0.185);
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+}
+
+.video{ 
+        
+        height: 200px;
+        width: 400px;
+        
+
+}
+/* ======================================================================================== */
+
+div{ grid-area: div;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+   
+ 
+}
+
+.div2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    font-weight: 100;
+    text-align: center;
+    font-size: 13pt;
+}
+
+.div1{
+    font-family:  'Roboto', sans-serif;
+    font-weight: 150px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.pessoa{ 
+   text-align: center;
+}
+
+.app img{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 100px;
+    border: 10px solid rgba(0, 0, 0, 0.466);
+    
+     
+}
+
+.app .app:hover{
+    background-color: rgb(0, 255, 106);
+    border-radius: 100px;
+    border: 10px solid rgb(0, 255, 106);
 
 }
 
-section{grid-area: sociais;
-    background-color: aqua;
-
-
-
-}
-
+/* ============================================================================================ */
 footer{grid-area: footer;
-    background-color: yellow;
+    background-color: rgba(128, 128, 128, 0.185);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        
+}
 
+.footer1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 30px;
+   
+    
+}
+
+footer a:link{
+    text-decoration: none;
+    color: gray;
+
+}
+
+footer a:visited{
+    color: gray;
 
 }
